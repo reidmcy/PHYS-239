@@ -1,5 +1,5 @@
 #include <iostream>
-#include "discpp.h"
+#include <discpp.h>
 
 Dislin g;
 
@@ -10,7 +10,12 @@ const double earthRadius = 6380 * km;
 const int matSize = 20;
 
 double gravitationalField(double aX, double aY) {
-    return gravitationalConstant * earthMass / (aX * aX + aY * aY);
+    double distance = aX * aX + aY * aY;
+    double massxG = gravitationalConstant * earthMass; 
+    if (distance > earthRadius)
+        return massxG / distance;
+    else 
+        return massxG * distance / earthRadius;
 }
 
 int main() {
@@ -28,9 +33,9 @@ int main() {
             field[outerLoop][innerLoop] = gravitationalField(x, y);
         }
     }
-    g.metafl("XWIN");
+    g.metafl("PDF");
     g.disini( );
-    int iPlot = 1;
+    int iPlot = 2;
     if (iPlot == 1)
         g.qplsur((float*) field, matSize, matSize);
     else if (iPlot == 2)
