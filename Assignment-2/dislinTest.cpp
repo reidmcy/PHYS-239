@@ -1,3 +1,8 @@
+//Question 2
+//Reid McIlroy-Young
+//20416412
+//January 28 2014
+
 #include <iostream>
 #include "discpp.h"
 using namespace std;
@@ -15,7 +20,7 @@ int main() {
         x[loop] = loop * del;
         y[loop] = f(x[loop]);
     }
-    g.metafl("PDF");
+    g.metafl("XWIN");
     g.disini();
     g.name("X-axis","X");
     g.name("Y-axis","Y");

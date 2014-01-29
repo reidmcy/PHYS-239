@@ -1,3 +1,8 @@
+//Question 1b
+//Reid McIlroy-Young
+//20416412
+//January 28 2014
+
 #include <iostream>
 using namespace std;
 

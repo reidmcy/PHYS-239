@@ -1,4 +1,10 @@
+//Question 3
+//Reid McIlroy-Young
+//20416412
+//January 28 2014
+
 #include <iostream>
+#include <math.h>
 #include <discpp.h>
 
 Dislin g;
@@ -12,10 +18,10 @@ const int matSize = 20;
 double gravitationalField(double aX, double aY) {
     double distance = aX * aX + aY * aY;
     double massxG = gravitationalConstant * earthMass; 
-    if (distance > earthRadius)
+    if (sqrt(distance) > earthRadius)
         return massxG / distance;
     else 
-        return massxG * distance / earthRadius;
+        return massxG * sqrt(distance) / (earthRadius * earthRadius * earthRadius);
 }
 
 int main() {
