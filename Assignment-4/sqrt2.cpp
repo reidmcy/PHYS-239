@@ -8,8 +8,8 @@ using namespace std;
 
 double sqrtAprox(int steps) {
     //Aproximates sqrt(2) - 1 using the series 1/ (2 + ( 1 / (2 + 1 / ( 2 + ..))))
-    // steps gives the number of times the series is recursed
-    // steps decrements each call of sqrtAprox and when it reachs 1 the value is returned
+    //steps gives the number of times the series is recursed
+    //steps decrements each call of sqrtAprox and when it reachs 1 the value is returned
     if (steps <= 1) {
         return 0.5;
     }
@@ -20,6 +20,7 @@ double sqrtAprox(int steps) {
 
 int main() {
     for (int loop = 1; loop < 11; loop++) {
+        //Loops form 1 to 10 and displays the results of sqrtAprox at each value
         cout << "for n of " << loop << " sqrt(2) - 1 = " << sqrtAprox(loop) << endl;
     }
 }
