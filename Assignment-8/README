@@ -1,0 +1,37 @@
+Assignment 8
+Reid McIlroy-Young
+
+MacOS 10.8.5
+
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 5.0 (clang-500.2.79) (based on LLVM 3.3svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+
+Dislin 10.4 / Darwin Intel, gcc, g++, g77, g95, gfortran, icc, ifort 64-bit
+
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Oct 25 2013 17:40:50)
+MacOS X (unix) version
+Included patches: 1-52
+
+Question 1:
+Note that points from fit overlap data.
+
+Question 2:
+Output:
+nput Matrix:
+(1,0)	(0,0)	(0,1)
+(-0,-1)	(1,0)	(-0,-1)
+(-1,0)	(0,0)	(0,1)
+Input Vector:
+(0,1)
+(0,0)
+(-0,-1)
+Final Vector:
+(1,1)
+(-1,0)
+(0,0)
+
+Question 3:
+see code
+

@@ -20,7 +20,7 @@ int main() {
         x[loop] = loop * del;
         y[loop] = f(x[loop]);
     }
-    g.metafl("XWIN");
+    g.metafl("PDF");
     g.disini();
     g.name("X-axis","X");
     g.name("Y-axis","Y");

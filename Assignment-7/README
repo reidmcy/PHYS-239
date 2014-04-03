@@ -1,0 +1,37 @@
+Assignment 7
+Reid McIlroy-Young
+
+MacOS 10.8.5
+
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 5.0 (clang-500.2.79) (based on LLVM 3.3svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+
+Dislin 10.4 / Darwin Intel, gcc, g++, g77, g95, gfortran, icc, ifort 64-bit
+
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Oct 25 2013 17:40:50)
+MacOS X (unix) version
+Included patches: 1-52
+
+Question 1:
+graph included
+
+Question 2:
+graph included
+
+Question 3:
+graph included
+
+Question 4:
+Output:
+The point calculated for xsqrt(abs(x)) is: 0.000411269 it took 5 iterations.
+The point calculated for s(x) is: -2.17547e-20 it took 3 iterations.
+
+It is also notable that sin has a much more accurate root.
+
+Question 5:
+graph included
+
+Question 6:
+graph included

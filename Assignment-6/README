@@ -1,0 +1,28 @@
+Assignment 6
+Reid McIlroy-Young
+
+MacOS 10.8.5
+
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 5.0 (clang-500.2.79) (based on LLVM 3.3svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+
+Dislin 10.4 / Darwin Intel, gcc, g++, g77, g95, gfortran, icc, ifort 64-bit
+
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Oct 25 2013 17:40:50)
+MacOS X (unix) version
+Included patches: 1-52
+
+Question 2 notes:
+Subtracting D^- from D^+ gives 12f'(x) + O(h^4)
+
+Question 3 notes:
+With log of df/dx - 5 get:
+1862 Floating point exception: 8   ./$bname
+error, since log(0) is undefined.
+This occurs because the approxiamtion if perfectly accurate and thus has no error
+
+Question 4 notes:
+used f'(x) = (f(x+h) - f(x)) / h from taylor expansion
+
