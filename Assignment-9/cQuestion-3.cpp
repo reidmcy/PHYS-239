@@ -1,4 +1,4 @@
-//Question 9
+//Question 3
 //Reid McIlroy-Young
 //20416412
 //April 3, 2014 
@@ -8,17 +8,17 @@
 #include <stdlib.h>
 #include <time.h>
 #include <discpp.h>
+#define PI 3.14159265359
 
 using namespace std;
 
-Dsilin G;
+Dislin G;
 
 double circle(double x) {
     return sqrt(1 - x*x);
 }
 
 double normRand() {
-
     return rand() / (double) RAND_MAX;
     }
 
@@ -37,18 +37,15 @@ double integral(double f(double), int step, double xMin, double xMax, double yMa
 int main() {
     srand(1396497803);
     double integrals[10];
-    int steps[10];
+    double steps[10];
     for (int loop = 0; loop < 10; loop++) {
         int two = 1;
         for (int loop2 = 0; loop2 < loop; loop2++) {
             two = two * 2;
         }
-        steps[loop] = two * 1000;
-        integrals[loop] =  4 *integral(circle, two*1000, 0, 1, 1);
-        cout << 4 * integral(circle, two*1000, 0, 1, 1) << endl; 
+        steps[loop] = log(two * 1000);
+        integrals[loop] =  log(fabs(4 *integral(circle, two*1000, 0, 1, 1) - PI));
     }
-
-
-
-
+    G.metafl("PDF");
+    G.qplot(steps, integrals, 10);
 }

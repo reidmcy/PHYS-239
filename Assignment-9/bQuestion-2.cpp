@@ -1,4 +1,4 @@
-//Question 9
+//Question 2
 //Reid McIlroy-Young
 //20416412
 //April 3, 2014 
@@ -40,7 +40,7 @@ int main() {
     T[0] = 0;
     euler(acceleration, X, V, T, dt);
     float minX, maxX, minY, maxY, stepsX, stepsY;
-    G.metafl("XWIN");
+    G.metafl("PDF");
     G.disini();
     G.setscl(X, steps, "X");
     G.setscl(V, steps, "Y");
